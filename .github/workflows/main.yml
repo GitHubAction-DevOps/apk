@@ -29,7 +29,7 @@ jobs:
           appName: Github-Actions/Testing
           token: 5d4aea88ca266ed830315cf4166927889a12875b
           # Distribution group
-          group: Testers
+          group: test
           # Artefact to upload (.apk or .ipa)
           file: ${{github.workspace}}/Sample.apk
           # Release notes visible on release page
