@@ -25,18 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: |
+          ls
+          ls ${{github.workspace}}
       
-      - name: App centre deploy
-        uses: wzieba/AppCenter-Github-Action@v1.3.1
-        with:
-          appName: Github-Actions/Testing
-          token: 5d4aea88ca266ed830315cf4166927889a12875b
-          # Distribution group
-          group: Testers
-          # Artefact to upload (.apk or .ipa)
-          file: ${{github.workspace}}/*.apk
-          # Release notes visible on release page
-          releaseNotes: R-1
-          # If true, send an email notification to the distribution group
-          notifyTesters: true
