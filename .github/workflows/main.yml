@@ -26,6 +26,9 @@ jobs:
       - name: Listing
         run: |
           ls ${{github.workspace}}
+          
+      - name: Second
+        run: |
           ls ${{github.workspace}}/Source/pim/Source/DemoApp/app/build/outputs/apk/
      
       - name: App centre deploy
