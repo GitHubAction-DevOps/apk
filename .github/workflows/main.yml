@@ -39,7 +39,7 @@ jobs:
           # Distribution group
           group: test
           # Artefact to upload (.apk or .ipa)
-          file: ${{github.workspace}}/Source/pim/Source/DemoApp/app/build/outputs/apk/release/pimApp-release.apk
+          file: ${{github.workspace}}/Source/pim/**/pimApp-release.apk
           # Release notes visible on release page
           releaseNotes: R-1
           # If true, send an email notification to the distribution group
